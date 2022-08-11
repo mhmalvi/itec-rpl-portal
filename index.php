@@ -10,6 +10,7 @@
 
 </head>
 
+
 <body>
   <div class="overlay">
 
@@ -137,7 +138,7 @@
 
   <!--========== upper end ====================-->
   <!--========== site header start ==================-->
-    <div id="site-header">
+  <div id="site-header">
     <div class="site-header-wrapper">
       <div class="container">
         <div class="row no-gutters justify-content-between">
@@ -177,37 +178,37 @@
       <div class="col-md-12">
         <div class="content-wrapper my-5">
           <div>
-                <?php
-                if (isset($_GET['success'])) {
-                ?>
-                   <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
-                          <?php
-                            echo $_GET['success'];
-                          
-                    ?>
-                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                 
-                  </div>
-                  <?php } ?>
-           
             <?php
-                if (isset($_GET['error'])) {
+            if (isset($_GET['success'])) {
+            ?>
+              <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+                <?php
+                echo $_GET['success'];
+
                 ?>
-                   <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
-                          <?php
-                            echo $_GET['error'];
-                          
-                    ?>
-                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                 
-                  </div>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+              </div>
             <?php } ?>
-           
-         
+
+            <?php
+            if (isset($_GET['error'])) {
+            ?>
+              <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+                <?php
+                echo $_GET['error'];
+
+                ?>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+              </div>
+            <?php } ?>
+
+
           </div>
           <form action="config.php" method="post" autocomplete="off">
             <div class="card p-1">
