@@ -1,6 +1,8 @@
 <!-- repo-card -->
 ![itec-rpl-portal](docs/assets/social-card.png)
 
+![itec-rpl-portal — architecture](docs/assets/architecture.png)
+
 # ITEC RPL Portal
 
 A Recognition of Prior Learning (RPL) portal for ITEC (ITE Counsel), built with vanilla PHP. This application provides a streamlined interface for managing RPL applications, document submissions, and assessment workflows.
